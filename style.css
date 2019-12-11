@@ -1,0 +1,81 @@
+
+body {
+    background: lightblue;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  .articletext {
+    width: 80vw;
+    height: 100%;
+    margin: 0 auto;
+    background: white;
+    overflow: hidden;
+    max-width: 900px;
+  }
+  
+  p {
+    font-size: 36px;
+    font-family: sans-serif;
+    font-weight: 100;
+  }
+  
+     .layer1 {
+      position: relative;
+      float: left;
+      background: #fd0;
+      border: 1px solid black;
+      padding: 10px;
+      margin-right: 20px;
+      width: 40%;
+      height: 350px;
+     }
+  
+
+  .layerright {
+    position: relative;
+    float: right; /* Обтекание по правому краю */
+    background: #fd0;
+    border: 1px solid black;
+    padding: 10px;
+    margin-left: 20px; /* Отступ справа */
+    width: 40%;
+    height: 350px;  
+    transition: 0.2s;
+  }
+
+  .left {
+    display: block;
+    position: absolute;
+    transition: 0.2s;
+  }
+
+  @media screen and (max-width: 900px) {   
+    .articletext {
+      width: 90vw;
+    }
+  }
+
+  @media screen and (max-width: 800px) {   
+    .articletext {
+      width: 95vw;
+    }
+
+    .layer1 {
+      width: 100%;
+      height: 350px;
+     }
+     
+     .layerright {
+      width: 100%;
+     }
+
+     .left {
+      display: block;
+      position: inherit;
+      margin: 0 auto;
+     }
+  }
