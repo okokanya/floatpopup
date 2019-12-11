@@ -23,7 +23,7 @@ body {
     font-weight: 100;
   }
   
-     .layer1 {
+     .layerleft {
       position: relative;
       float: left;
       background: #fd0;
@@ -47,7 +47,7 @@ body {
     transition: 0.2s;
   }
 
-  .left {
+  .absolute {
     display: block;
     position: absolute;
     transition: 0.2s;
